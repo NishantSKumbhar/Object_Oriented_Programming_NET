@@ -15,10 +15,11 @@ namespace Console_OOP
         {
             Console.WriteLine("Jay Ganesh");
 
-            //StopWatch s = StopWatch.getStpInstance();
-            //Console.WriteLine(s.ToString()); 
-            
-            //StopWatch s1 = StopWatch.getStpInstance();
+            StopWatch s = StopWatch.getStpInstance();
+
+            s.StartTheWatch();
+            s.StopTheWatch();
+            s.GetTheDuration();
 
         }
     }
