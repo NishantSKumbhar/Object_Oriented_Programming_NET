@@ -32,8 +32,8 @@ namespace Console_OOP
                 Console.WriteLine("Choice 4 : EXIT.");
                 Console.WriteLine("Enter the Choice : ");
                 Choice = Convert.ToInt32(Console.ReadLine());
-
-
+                Console.Clear();
+                Console.WriteLine("\n\n-------------------------------------------------");
                 switch (Choice)
                 {
                     case 1:
@@ -49,7 +49,7 @@ namespace Console_OOP
                         Console.WriteLine("Thank you.");
                         break;
                 }
-
+                Console.WriteLine("\n\n-------------------------------------------------");
             } while (Choice != 4);
         }
     }
