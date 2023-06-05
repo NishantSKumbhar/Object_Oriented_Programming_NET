@@ -9,10 +9,13 @@ namespace Console_OOP.Exercise
     internal class StopWatch
     {
         private static StopWatch stp = null;
-        WatchStart w = WatchStart.GetInstanceWatchStart();
-
+       
+        
         private  DateTime start;
         private  DateTime stop;
+        WatchStart w = WatchStart.GetInstanceWatchStart();
+        private bool Started = false;
+
         private StopWatch() { }
 
         public static StopWatch getStpInstance()
@@ -26,29 +29,45 @@ namespace Console_OOP.Exercise
 
         public void StartTheWatch()
         {
-            //Console.WriteLine("Watch Started ...");
-            
-            if(w == null )
+            if (Started)
             {
-                Console.WriteLine("Watch Started ...");
-                w = WatchStart.GetInstanceWatchStart();
-                start = w.GetTime();
+                Console.WriteLine("Sorry, Already Started...");
             }
             else
             {
-                Console.WriteLine("Watch already Started ...");
+                Console.WriteLine("Watch Started ...");
+                start = w.GetTime();
+                Started = true;
             }
         }
 
         public void StopTheWatch()
         {
-            Console.WriteLine("Watch Stopped ...");
-            w = null;
+            if (!Started)
+            {
+                Console.WriteLine("Sorry , Already Stopped...");
+            }
+            else
+            {
+                Console.WriteLine("Watch Stopped ...");
+                stop = w.GetTime();
+                Started = false;
+            }
         }
 
         public void GetTheDuration()
         {
-            Console.WriteLine("Duration : ");
+            //Console.WriteLine("Duration : ");
+            if(Started)
+            {
+                Console.WriteLine("Please, stop the Watch to get the Duration.");
+            }
+            else
+            {
+                TimeSpan t = start - stop;
+                Console.WriteLine("Duration : "+ t);
+            }
+
         }
 
 
