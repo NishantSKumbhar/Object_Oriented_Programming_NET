@@ -20,7 +20,8 @@ namespace Console_OOP
             //m.Name = "Note 1";
             //m.show();           
 
-            
+            Sample1 s = new Sample1();
+            s.Samples.Add(s);
 
         }
     }
