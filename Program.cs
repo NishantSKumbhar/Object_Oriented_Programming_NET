@@ -14,11 +14,14 @@ namespace Console_OOP
         static void Main(string[] args)
         {
             Console.WriteLine("Jay Ganesh");
-            Mobile m = new Mobile();
-            m.Price= 100;
-            m.Description = "kjs99 23 9- 2-2-2-2-2";
-            m.Name = "Note 1";
-            m.show();           
+            //Mobile m = new Mobile();
+            //m.Price= 100;
+            //m.Description = "kjs99 23 9- 2-2-2-2-2";
+            //m.Name = "Note 1";
+            //m.show();           
+
+            
+
         }
     }
 }
