@@ -14,10 +14,19 @@ namespace Console_OOP
         static void Main(string[] args)
         {
             Console.WriteLine("Jay Ganesh");
-            
-            for(int i = 0; i < 100; i++)
+
+            //for(int i = 0; i < 100; i++)
+            //{
+            //    Console.WriteLine("Nvr Gv p");
+            //}
+
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Nvr Gv p");
+                if (i == 4)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
             }
 
         }
