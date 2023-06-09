@@ -15,7 +15,10 @@ namespace Console_OOP
         {
             Console.WriteLine("Jay Ganesh");
             
-
+            for(int i = 0; i < 100; i++)
+            {
+                Console.WriteLine("Nvr Gv p");
+            }
 
         }
     }
