@@ -15,19 +15,22 @@ namespace Console_OOP
         {
             Console.WriteLine("Jay Ganesh");
 
-            //for(int i = 0; i < 100; i++)
-            //{
-            //    Console.WriteLine("Nvr Gv p");
-            //}
+            S1 s = new S1(1, 3);
 
-            for (int i = 0; i < 10; i++)
+            s.Move(1, 3);
+            try
             {
-                if (i == 4)
-                {
-                    continue;
-                }
-                Console.WriteLine(i);
+                s.Move(null);
             }
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e.Message);
+            }
+
+            Calculator c = new Calculator();
+            int x = c.Add(1, 2, 3, 4, 5, 6);
+            Console.WriteLine(x);
 
         }
     }

@@ -11,7 +11,7 @@ namespace Console_OOP.Sample_Mobile
         public List<Sample1> Samples;
 
         public Sample1()
-        {
+        {   
             Samples = new List<Sample1>();
         }
     }
