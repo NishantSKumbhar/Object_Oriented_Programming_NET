@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Threading;
 using Console_OOP.Exercise;
 using Console_OOP.Sample_Mobile;
+using Console_OOP.Mosh_EX_1;
+
 
 namespace Console_OOP
 {
@@ -13,14 +15,18 @@ namespace Console_OOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Jay Ganesh");
-
-            S1 s = new S1(1, 3);
-
-            s.Move(1, 3);
+           
             try
             {
-                s.Move(null);
+                Calc c = Calc.GetCalcInstance();
+                c.Start();
+                Thread.Sleep(5000);
+                c.Stop();
+                c.GetDuration();
+                c.GetDuration();
+                c.GetDuration();
+                c.Start();
+                c.GetDuration();
             }
             catch (Exception e)
             {
@@ -28,9 +34,7 @@ namespace Console_OOP
                 Console.WriteLine(e.Message);
             }
 
-            Calculator c = new Calculator();
-            int x = c.Add(1, 2, 3, 4, 5, 6);
-            Console.WriteLine(x);
+            
 
         }
     }

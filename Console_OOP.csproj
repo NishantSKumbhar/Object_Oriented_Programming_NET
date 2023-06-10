@@ -45,11 +45,15 @@
   <ItemGroup>
     <Compile Include="Exercise\StopWatch.cs" />
     <Compile Include="Exercise\WatchStart.cs" />
+    <Compile Include="Mosh_EX_1\Calc.cs" />
+    <Compile Include="Mosh_EX_1\StartT.cs" />
+    <Compile Include="Mosh_EX_1\StopT.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sample_Mobile\Calculator.cs" />
     <Compile Include="Sample_Mobile\Mobile.cs" />
     <Compile Include="Sample_Mobile\PClass.cs" />
+    <Compile Include="Sample_Mobile\Person.cs" />
     <Compile Include="Sample_Mobile\S1.cs" />
     <Compile Include="Sample_Mobile\Sample1.cs" />
   </ItemGroup>
