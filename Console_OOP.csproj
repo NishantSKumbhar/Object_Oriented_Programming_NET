@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composition\DbMigrator.cs" />
+    <Compile Include="Composition\Installer.cs" />
+    <Compile Include="Composition\Logger.cs" />
     <Compile Include="Exercise\StopWatch.cs" />
     <Compile Include="Exercise\WatchStart.cs" />
     <Compile Include="Mosh_EX_1\Calc.cs" />

@@ -7,7 +7,7 @@ using System.Threading;
 using Console_OOP.Exercise;
 using Console_OOP.Sample_Mobile;
 using Console_OOP.Mosh_EX_1;
-
+using Console_OOP.Composition;
 
 namespace Console_OOP
 {
@@ -16,26 +16,15 @@ namespace Console_OOP
         static void Main(string[] args)
         {
            
-            try
-            {
-                Calc c = Calc.GetCalcInstance();
-                c.Start();
-                Thread.Sleep(5000);
-                c.Stop();
-                c.GetDuration();
-                c.GetDuration();
-                c.GetDuration();
-                c.Start();
-                c.GetDuration();
-            }
-            catch (Exception e)
-            {
+            Logger logger1 = new Logger();
 
-                Console.WriteLine(e.Message);
-            }
+            Installer vsCode = new Installer(logger1);
 
-            
+            vsCode.Install();
 
+            DbMigrator database = new DbMigrator(new Logger());
+
+            database.Migrate();
         }
     }
 }
