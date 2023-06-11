@@ -38,9 +38,12 @@ namespace Console_OOP.Mosh_EX_2
 
         public void ShowPost()
         {
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("Title :  " + this._title);
             Console.WriteLine("Description : " + this._description);
             Console.WriteLine("\t\t- on : " + this._created);
+            Console.WriteLine("Votes : " + this._vote + "\n");    
         }
     }
 }
