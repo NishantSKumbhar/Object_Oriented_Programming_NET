@@ -8,6 +8,8 @@ using Console_OOP.Exercise;
 using Console_OOP.Sample_Mobile;
 using Console_OOP.Mosh_EX_1;
 using Console_OOP.Composition;
+using Console_OOP.Mosh_EX_2;
+
 
 namespace Console_OOP
 {
@@ -15,16 +17,15 @@ namespace Console_OOP
     {
         static void Main(string[] args)
         {
-           
-            Logger logger1 = new Logger();
-
-            Installer vsCode = new Installer(logger1);
-
-            vsCode.Install();
-
-            DbMigrator database = new DbMigrator(new Logger());
-
-            database.Migrate();
+            Console.WriteLine("---------------------------------------------------------------");
+            Post p1 = new Post("Time", "Time is master worker \nthat heals the wounds of temporary defeat,\nand rights the wrongs of the world!\nThere is nothing impossible with time..", DateTime.Now);
+            p1.UpVote();
+            p1.UpVote();
+            p1.UpVote();
+            p1.DownVote();
+            p1.ShowVotes();
+            p1.ShowPost();
+            Console.WriteLine("---------------------------------------------------------------");
         }
     }
 }
