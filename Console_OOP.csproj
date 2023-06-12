@@ -48,6 +48,8 @@
     <Compile Include="Composition\Logger.cs" />
     <Compile Include="Exercise\StopWatch.cs" />
     <Compile Include="Exercise\WatchStart.cs" />
+    <Compile Include="Inheritance\Employee.cs" />
+    <Compile Include="Inheritance\Manager.cs" />
     <Compile Include="Mosh_EX_1\Calc.cs" />
     <Compile Include="Mosh_EX_1\StartT.cs" />
     <Compile Include="Mosh_EX_1\StopT.cs" />

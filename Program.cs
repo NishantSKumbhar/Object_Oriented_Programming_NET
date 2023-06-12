@@ -9,7 +9,7 @@ using Console_OOP.Sample_Mobile;
 using Console_OOP.Mosh_EX_1;
 using Console_OOP.Composition;
 using Console_OOP.Mosh_EX_2;
-
+using Console_OOP.Inheritance;
 
 namespace Console_OOP
 {
@@ -17,28 +17,12 @@ namespace Console_OOP
     {
         static void Main(string[] args)
         {
-            
-            Post p1 = new Post("Time", "Time is master worker \nthat heals the wounds of temporary defeat,\nand rights the wrongs of the world!\nThere is nothing impossible with time..", DateTime.Now);
-            p1.UpVote();
-            p1.UpVote();
-            p1.UpVote();
-            p1.DownVote();
-            //p1.ShowVotes();
-            //p1.ShowPost();
 
-            Post p2 = new Post("Opportunity", "We need not seek opportunity in distance;\nthat we may find it right where we stand.", DateTime.Now);
-            
-            p2.UpVote();
-            p2.UpVote();
-            p2.DownVote();
-            //p2.ShowVotes();
-            //p2.ShowPost();
+            Employee e1 = new Employee(1, 23, "John", "john123@gmail.com", 60000);
+            e1.show();
 
-            PostStack PStack = new PostStack();
-            PStack.AddPost(p1);
-            PStack.AddPost(p2);
-
-            PStack.ShowAllPosts();
+            Manager m1 = new Manager(new List<string>(), 981288);
+            m1.show();
         }
     }
 }
