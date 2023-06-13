@@ -25,9 +25,14 @@ namespace Console_OOP
             m1.show();
             Console.WriteLine("--------------------");
 
-            Employee e2 = new Employee();
-            Console.WriteLine("--------------------");
+
             Manager m2 = new Manager();
+            Employee e2 = m2;
+            e2.DoProject();
+
+            Manager m3 = (Manager)e2;
+            m3.DoProject();
+            m3.AssignProject();
         }
     }
 }

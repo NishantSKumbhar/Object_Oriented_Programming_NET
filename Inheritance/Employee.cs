@@ -27,6 +27,10 @@ namespace Console_OOP.Inheritance
             this._salary = salary;
         }
 
+        public void DoProject()
+        {
+            Console.WriteLine("Employee Doing the Project");
+        }
         public void show()
         {
             Console.WriteLine(this._id);

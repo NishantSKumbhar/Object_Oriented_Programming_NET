@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Console_OOP.Inheritance
 {
-    internal class Manager: Employee
+    internal class Manager : Employee
     {
         private List<string> _powers;
         private int _allowance;
@@ -16,10 +16,15 @@ namespace Console_OOP.Inheritance
             Console.WriteLine("Default Manager");
         }
 
-        public Manager(int id, int age, string name, string email, int salary, List<string> powers, int allowance): base(id, age, name, email, salary)
+        public Manager(int id, int age, string name, string email, int salary, List<string> powers, int allowance) : base(id, age, name, email, salary)
         {
             _powers = powers;
             _allowance = allowance;
+        }
+
+        public void AssignProject()
+        {
+            Console.WriteLine("Manager has assigned project.");
         }
 
         public void show()
