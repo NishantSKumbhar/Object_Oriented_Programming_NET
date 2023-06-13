@@ -20,9 +20,14 @@ namespace Console_OOP
 
             Employee e1 = new Employee(1, 23, "John", "john123@gmail.com", 60000);
             e1.show();
-
+            Console.WriteLine("--------------------");
             Manager m1 = new Manager(1, 23, "John", "john123@gmail.com", 60000, new List<string>(), 981288);
             m1.show();
+            Console.WriteLine("--------------------");
+
+            Employee e2 = new Employee();
+            Console.WriteLine("--------------------");
+            Manager m2 = new Manager();
         }
     }
 }
