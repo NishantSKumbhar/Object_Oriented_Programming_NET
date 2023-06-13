@@ -16,7 +16,7 @@ namespace Console_OOP.Inheritance
             Console.WriteLine("Default Manager");
         }
 
-        public Manager(List<string> powers, int allowance)
+        public Manager(int id, int age, string name, string email, int salary, List<string> powers, int allowance): base(id, age, name, email, salary)
         {
             _powers = powers;
             _allowance = allowance;
