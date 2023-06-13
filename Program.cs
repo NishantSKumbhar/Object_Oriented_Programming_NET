@@ -10,6 +10,8 @@ using Console_OOP.Mosh_EX_1;
 using Console_OOP.Composition;
 using Console_OOP.Mosh_EX_2;
 using Console_OOP.Inheritance;
+using Console_OOP.Mosh_EX_3_Stack;
+
 
 namespace Console_OOP
 {
@@ -18,21 +20,26 @@ namespace Console_OOP
         static void Main(string[] args)
         {
 
-            Employee e1 = new Employee(1, 23, "John", "john123@gmail.com", 60000);
-            e1.show();
-            Console.WriteLine("--------------------");
-            Manager m1 = new Manager(1, 23, "John", "john123@gmail.com", 60000, new List<string>(), 981288);
-            m1.show();
-            Console.WriteLine("--------------------");
+			try
+			{
+				Stack stack = new Stack();
+				stack.push(1);
+				stack.push(2);
+				stack.push(3);
 
+				stack.ShowStack();
 
-            Manager m2 = new Manager();
-            Employee e2 = m2;
-            e2.DoProject();
+				stack.pop();
+				stack.pop();
 
-            Manager m3 = (Manager)e2;
-            m3.DoProject();
-            m3.AssignProject();
+				stack.ShowStack();
+				stack.Clear();
+			}
+			catch (Exception e)
+			{
+
+				Console.WriteLine(e.Message);
+			}
         }
     }
 }
