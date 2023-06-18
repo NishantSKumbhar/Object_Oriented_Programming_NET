@@ -11,7 +11,7 @@ using Console_OOP.Composition;
 using Console_OOP.Mosh_EX_2;
 using Console_OOP.Inheritance;
 using Console_OOP.Mosh_EX_3_Stack;
-
+using Console_OOP.OverRiding;
 
 namespace Console_OOP
 {
@@ -19,27 +19,12 @@ namespace Console_OOP
     {
         static void Main(string[] args)
         {
+            BaseClass b = new BaseClass();
+            b.Add(1, 2, 3);
 
-			try
-			{
-				Stack stack = new Stack();
-				stack.push(1);
-				stack.push(2);
-				stack.push(3);
-
-				stack.ShowStack();
-
-				stack.pop();
-				stack.pop();
-
-				stack.ShowStack();
-				stack.Clear();
-			}
-			catch (Exception e)
-			{
-
-				Console.WriteLine(e.Message);
-			}
+            DerivedClass d = new DerivedClass();
+            d.Add(3, 4, 12);
+			
         }
     }
 }
