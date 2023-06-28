@@ -19,11 +19,14 @@ namespace Console_OOP
     {
         static void Main(string[] args)
         {
-            BaseClass b = new BaseClass();
-            b.Add(1, 2, 3);
+            var shapes = new List<SHAPE>();
+            shapes.Add(new CIRCLE());
+            shapes.Add(new RECTANGLE());
 
-            DerivedClass d = new DerivedClass();
-            d.Add(3, 4, 12);
+            foreach (var shape in shapes)
+            {
+                shape.Draw();
+            }
 			
         }
     }
