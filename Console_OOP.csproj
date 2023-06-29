@@ -56,6 +56,8 @@
     <Compile Include="Mosh_EX_2\Post.cs" />
     <Compile Include="Mosh_EX_2\PostStack.cs" />
     <Compile Include="Mosh_EX_3_Stack\Stack.cs" />
+    <Compile Include="Mosh_EX_4_Abstract\DbConnection.cs" />
+    <Compile Include="Mosh_EX_4_Abstract\SqlConnection.cs" />
     <Compile Include="OverRiding\BaseClass.cs" />
     <Compile Include="OverRiding\CIRCLE.cs" />
     <Compile Include="OverRiding\DerivedClass.cs" />

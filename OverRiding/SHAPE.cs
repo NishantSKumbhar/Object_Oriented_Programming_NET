@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace Console_OOP.OverRiding
 {
-    internal class SHAPE
+    internal abstract class SHAPE
     {
         public int Height { get; set; }
         public int Width { get; set; }
 
-        public virtual void Draw()
-        {
-            
-        }
+        public abstract void Draw();
     }
 }

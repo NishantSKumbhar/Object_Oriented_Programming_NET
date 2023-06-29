@@ -12,6 +12,7 @@ using Console_OOP.Mosh_EX_2;
 using Console_OOP.Inheritance;
 using Console_OOP.Mosh_EX_3_Stack;
 using Console_OOP.OverRiding;
+using Console_OOP.Mosh_EX_4_Abstract;
 
 namespace Console_OOP
 {
@@ -19,15 +20,20 @@ namespace Console_OOP
     {
         static void Main(string[] args)
         {
-            var shapes = new List<SHAPE>();
-            shapes.Add(new CIRCLE());
-            shapes.Add(new RECTANGLE());
 
-            foreach (var shape in shapes)
+            try
             {
-                shape.Draw();
+                SqlConnection sql = new SqlConnection(null);
+                sql.OpenConnection();
+                sql.CloseConnection();
             }
-			
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e.Message);
+            }
+
+            
         }
     }
 }
