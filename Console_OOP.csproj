@@ -50,6 +50,8 @@
     <Compile Include="Exercise\WatchStart.cs" />
     <Compile Include="Inheritance\Employee.cs" />
     <Compile Include="Inheritance\Manager.cs" />
+    <Compile Include="Interface\Order.cs" />
+    <Compile Include="Interface\OrderProcessor.cs" />
     <Compile Include="Mosh_EX_1\Calc.cs" />
     <Compile Include="Mosh_EX_1\StartT.cs" />
     <Compile Include="Mosh_EX_1\StopT.cs" />
@@ -76,5 +78,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
