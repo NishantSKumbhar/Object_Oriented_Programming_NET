@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Console_OOP.Interface
 {
-    internal class Shipment
+    public class Shipment
     {
+        public float Cost { get; set; }
+        public DateTime ShippingDate { get; set; }
     }
 }

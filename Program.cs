@@ -34,7 +34,7 @@ namespace Console_OOP
 
             //    Console.WriteLine(e.Message);
             //}
-            var orderProcessor = new OrderProcessor();
+            var orderProcessor = new OrderProcessor(new ShippingCalculator());
             var order = new Order()
             {
                 DatePlaced = DateTime.Now,
