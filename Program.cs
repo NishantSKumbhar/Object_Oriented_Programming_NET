@@ -7,7 +7,7 @@ using System.Threading;
 using Console_OOP.Exercise;
 using Console_OOP.Sample_Mobile;
 using Console_OOP.Mosh_EX_1;
-using Console_OOP.Composition;
+//using Console_OOP.Composition;
 using Console_OOP.Mosh_EX_2;
 using Console_OOP.Inheritance;
 using Console_OOP.Mosh_EX_3_Stack;
@@ -23,26 +23,10 @@ namespace Console_OOP
         static void Main(string[] args)
         {
 
-            //try
-            //{
-            //    SqlConnection sql = new SqlConnection(null);
-            //    sql.OpenConnection();
-            //    sql.CloseConnection();
-            //}
-            //catch (Exception e)
-            //{
-
-            //    Console.WriteLine(e.Message);
-            //}
-            var orderProcessor = new OrderProcessor(new ShippingCalculator());
-            var order = new Order()
-            {
-                DatePlaced = DateTime.Now,
-                TotalPrice = 100f
-            };
-            orderProcessor.Process(order);
-
-            
+           
+            Console.WriteLine("------------------------------------------");
+            DbMigrator dbM = new DbMigrator(new ConsoleLogger());
+            dbM.Migrate();
         }
     }
 }
