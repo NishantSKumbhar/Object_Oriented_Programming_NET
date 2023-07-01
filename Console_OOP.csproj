@@ -52,6 +52,7 @@
     <Compile Include="Inheritance\Manager.cs" />
     <Compile Include="Interface\ConsoleLogger.cs" />
     <Compile Include="Interface\DbMigrator.cs" />
+    <Compile Include="Interface\FileLogger.cs" />
     <Compile Include="Interface\ILogger.cs" />
     <Compile Include="Interface\Order.cs" />
     <Compile Include="Interface\OrderProcessor.cs" />

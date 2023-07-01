@@ -25,7 +25,7 @@ namespace Console_OOP
 
            
             Console.WriteLine("------------------------------------------");
-            DbMigrator dbM = new DbMigrator(new ConsoleLogger());
+            DbMigrator dbM = new DbMigrator(new FileLogger("C:\\FileLogger\\log.txt"));
             dbM.Migrate();
         }
     }
