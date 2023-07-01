@@ -25,8 +25,8 @@ namespace Console_OOP
 
            
             Console.WriteLine("------------------------------------------");
-            DbMigrator dbM = new DbMigrator(new FileLogger("C:\\FileLogger\\log.txt"));
-            dbM.Migrate();
+            var encoder = new VideoEncoder();
+            encoder.Encode(new Video());
         }
     }
 }
