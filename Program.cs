@@ -20,13 +20,28 @@ namespace Console_OOP
 {
     internal class Program
     {
+        class Class1
+        {
+            public int id { get; set; }
+
+            string _name;
+            public string name
+            {
+                get { return _name; }
+                set { _name = value; }
+            }
+        }
         static void Main(string[] args)
         {
 
            
-            Console.WriteLine("------------------------------------------");
-            var encoder = new VideoEncoder();
-            encoder.Encode(new Video());
+            Console.WriteLine("Jay Ganesh");
+            Class1 c = new Class1();
+            c.id = 1;
+            c.name = "test";
+            Console.WriteLine(c.id + " " + c.name);
+            Console.ReadLine();
+            
         }
     }
 }
